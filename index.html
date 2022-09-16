@@ -11,43 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+		</script>
+		<script> 
+		$(function(){
+			// Load all the modular HTML prefabs. DRY Code!
+			$("#headerBanner").load("headerBanner.html"); 
+			$("#footer").load("footer.html"); 
+		});
+		</script> 
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
-
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-								<h1><a href="index.html" id="logo">MetaProx's Portfolio!</a></h1>
-								<hr />
-								<p> Hello! I am MetaProx, an old school Roblox developer with 10+ years of <i>experience</i> making <i>experiences</i></p>
-							</header>
-							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
-							</footer>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Skills</a>
-									<ul>
-										<li><a href="#">Programming </a></li>
-										<li><a href="#">3D Art </a></li>
-										<li><a href="#">Game Design </a></li>
-									</ul>
-								</li>
-								<li><a href="#">Experience</a></li>
-								<li><a href="#">Contact information</a></li>
-							</ul>
-						</nav>
-						<p>Banner image by: <a href="https://twitter.com/samanthastahlke">Samantha Stahlke</a></p>
-				</div>
+				<div id="headerBanner"></div>
 				
 			<!-- Banner -->
 				<section id="banner">
@@ -143,7 +124,7 @@
 					<section id="features" class="container special">
 						<header>
 							<h2>So, what am I good at?</h2>
-							<p>Check out some of my skills listed below! You can also use the top bar dropdown!</p>
+							<p>Check out some of my skills listed below!</p>
 						</header>
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
@@ -169,60 +150,7 @@
 
 				</div>
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-
-							<!-- Tweets -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
-									</header>
-									<ul class="divided">
-										<li>
-											<article class="tweet">
-												Tweet tracker not yet implemented!
-												<span class="timestamp">5 minutes ago</span>
-											</article>
-										</li>
-									</ul>
-								</section>
-
-
-
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Where else am I?</h3>
-										</header>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-											<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											<li><a href="#" class="icon images/rbxStudio"><span class="label">Roblox</span></a></li>
-										</ul>
-									</section>
-
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-											<li>Design: <a href="http://html5up.net">HTML5 UP, Modified by MetaProx</a></li>
-										</ul>
-									</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-		</div>
+			<div id="footer">	</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
