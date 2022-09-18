@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>No Sidebar - Helios by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+		</script>
+		<script src="assets/js/hiddenCode.js"></script>
+		<script>
+			$(function(){
+				// Load all the modular HTML prefabs. DRY Code!
+				$("#headerTopBar").load("headerTopBar.html"); 
+				$("#footer").load("footer.html"); 
+			});
+		</script>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="headerTopBar">
+				<h1><a href="index.html" id="logo">MetaProx's Portfolio!</a></h1>
+			</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							
+							<header>
+								<h2>Programming</h2>
+							</header>
+
+
+								<div class="row gtr-250">
+									<div class="col-4 col-12">
+										<section class="box">
+											<div>
+												<video src="images\PortfolioVideos\flowfieldOpen.mp4" width="750" controls>
+													Failed to load video: Your browser does not support the video tag.
+												<>
+											</div>
+											
+											
+											<header>
+												<h3>Flowfield Pathfinder</h3>
+											</header>
+											<p>
+												Instead of creating hundreds of paths and running hundreds of calculations, why not simply create a possible path amongst an area towards one?
+												Although the initial run will be more performance costly, with a large number of simple actors and a less complex scene, you can gain some serious performance.
+												The system was never finished, and it still has some scalability flaws, the next step would be to build chunks of each flowfield and use A* to pathfind along them.
+											</p>
+											<p>Best uses for this would be operating horde AI that generally all share the same general objective, things like zombie hordes!</p>
+											<footer>
+											</footer>
+										</section>
+										<section class="box">
+											<div>
+												<video src="images\PortfolioVideos\infiniteRooms.mp4" width="750" controls>
+													Failed to load video: Your browser does not support the video tag.
+												<>
+											</div>
+											
+											
+											<header>
+												<h3>Infinite Room Generator</h3>
+											</header>
+											<p>
+												A rather simple solution to linear maps, this system creates an almost maze-like structure by piecing together rooms in a random order.
+												Each prefab room has a set number of doors that are used to generate any other room that will fit in that location.
+												The approach to this system was a very occams razor approach, and it works very well while avoiding the need for a lot of complex calculations.
+											</p>
+
+											<p> This was initially being made for a "Backrooms" game, but I eventually opted to try something else.</p>
+											<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler1') .style.display=='none') {document.getElementById('spoiler1') .style.display=''}else{document.getElementById('spoiler1') .style.display='none'}">Code Sample</button>
+											<div id="spoiler1" style="display:none">
+											<script src="https://gist.github.com/MetaProxi/32dd4fe7c89f563feeee71f30768a32d.js"></script>
+											</div>
+											<footer>
+
+											</footer>
+										</section>
+										<section class="box">
+											<div>
+												<video src="images\PortfolioVideos\sunlightBouncer.mp4" width="750" controls>
+													Failed to load video: Your browser does not support the video tag.
+												<>
+											</div>
+											
+											
+											<header>
+												<h3>Sunlight Bouncer</h3>
+											</header>
+											<p>
+												This system creates the illusion of Global Illumination by performing raycast bounces off of materials and inheriting the color of the material it hit.
+												For each bounce it blends the colour of each surface it hit as well as saturating and darkening the colour to create a more realistic effect. At each bounce site it also
+												creates a pointlight object with the current info of the light.
+											</p>
+
+											<p>
+												This is a very performance heavy system and will not be usable outside of baked lighting. It requires a decent amount of work to get it to work with your scene, but it is
+												but takes very little actual setup.
+											</p>
+											<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler2') .style.display=='none') {document.getElementById('spoiler2') .style.display=''}else{document.getElementById('spoiler2') .style.display='none'}">Code Sample</button>
+											<div id="spoiler2" style="display:none">
+												<script src="https://gist.github.com/MetaProxi/eb68d96a2cca8e6ed7d63ace6a41b641.js"></script>
+											</div>
+											
+											<footer>
+												
+											</footer>
+										</section>
+									</div>
+									
+									
+								</div>
+
+						</article>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer"></div>
+
+		</div>
+
+		<!-- Scripts -->
+			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/hiddenCode.js"></script>
+	</body>
+</html>
