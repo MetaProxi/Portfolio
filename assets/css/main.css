@@ -236,7 +236,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 50%;
 		width: 1400px;
 	}
 
@@ -296,7 +296,6 @@ input, select, textarea {
 		justify-content: space-between;
 		-ms-flex-align: stretch;
 		-webkit-align-items: stretch;
-		align-items: left;
 	}
 
 		.plist > * {
@@ -2712,8 +2711,11 @@ input, select, textarea {
 			}
 
 		.carousel .reel {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			white-space: nowrap;
-			position: relative;
+			position: center;
 			-webkit-overflow-scrolling: touch;
 			padding: 0 2em 0 2em;
 		}
