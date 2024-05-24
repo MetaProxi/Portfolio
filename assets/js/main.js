@@ -136,47 +136,47 @@
 				$t._updatePos = function() { $reel.css('transform', 'translate(' + pos + 'px, 0)'); };
 
 			// Forward.
-				$forward
-					.appendTo($t)
-					.hide()
-					.mouseenter(function(e) {
-						timerId = window.setInterval(function() {
-							pos -= settings.carousels.speed;
+				// $forward
+				// 	.appendTo($t)
+				// 	.hide()
+				// 	.mouseenter(function(e) {
+				// 		timerId = window.setInterval(function() {
+				// 			pos -= settings.carousels.speed;
 
-							if (pos <= rightLimit)
-							{
-								window.clearInterval(timerId);
-								pos = rightLimit;
-							}
+				// 			if (pos <= rightLimit)
+				// 			{
+				// 				window.clearInterval(timerId);
+				// 				pos = rightLimit;
+				// 			}
 
-							$t._updatePos();
-						}, 10);
-					})
-					.mouseleave(function(e) {
-						window.clearInterval(timerId);
-					});
+				// 			$t._updatePos();
+				// 		}, 10);
+				// 	})
+				// 	.mouseleave(function(e) {
+				// 		window.clearInterval(timerId);
+				// 	});
 
 			// Backward.
-				$backward
-					.appendTo($t)
-					.hide()
-					.mouseenter(function(e) {
-						timerId = window.setInterval(function() {
-							pos += settings.carousels.speed;
+				// $backward
+				// 	.appendTo($t)
+				// 	.hide()
+				// 	.mouseenter(function(e) {
+				// 		timerId = window.setInterval(function() {
+				// 			pos += settings.carousels.speed;
 
-							if (pos >= leftLimit) {
+				// 			if (pos >= leftLimit) {
 
-								window.clearInterval(timerId);
-								pos = leftLimit;
+				// 				window.clearInterval(timerId);
+				// 				pos = leftLimit;
 
-							}
+				// 			}
 
-							$t._updatePos();
-						}, 10);
-					})
-					.mouseleave(function(e) {
-						window.clearInterval(timerId);
-					});
+				// 			$t._updatePos();
+				// 		}, 10);
+				// 	})
+				// 	.mouseleave(function(e) {
+				// 		window.clearInterval(timerId);
+				// 	});
 
 			// Init.
 				$window.on('load', function() {

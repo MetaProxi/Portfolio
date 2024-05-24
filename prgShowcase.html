@@ -42,91 +42,55 @@
 							<header>
 								<h2>Programming Highlights</h2>
 							</header>
-
-							<h2>Ballista: </h2>
-							<h3>On top of most of the game's minute to minute gameplay, here's some other neat things you might've missed.</h3>
 							<div class="row gtr-250">
-								<div class="col-4 col-12">
-									<section class="box">
-										<div>
-											<div>
-												<video src="images\PortfolioVideos\ballistaMomentum.mp4" width="750" controls>
-													Failed to load video: Your browser does not support the video tag.
-												<>
-											</div>
-										<header>
-											<h3>Camera Momentum + Impact</h3>
-										</header>
-										<p>
-											While swinging a sword, the camera will follow the swords motion to simulate momentum, and will also shake when the player hits an enemy.
-											This is used to give the player a sense of impact, and to make the player feel like they are swinging a heavy weapon. 
-											Each weapon has a different impact force, and the camera shake and movement is scaled to the impact force.
-										</p>
-										<p> Given the sword uses nodes across the blade to detect impact, one can simply check the direction moved between frames to determine how to sway the camera.</p></div>
-										</div>
-										<footer>
-
-										</footer>
-									</section>
-								</div>
 
 								<div class="row gtr-250">
 									<div class="col-4 col-12">
+
 										<section class="box">
 											<div>
-												<video src="images\PortfolioVideos\musicLayering.mp4" width="750" controls>
-													Failed to load video: Your browser does not support the video tag.
-												<>
-											</div>
-											
-
-											<header>
-												<h3>Music layering</h3>
-											</header>
-											<p>
-												All the music in Ballista was designed in a way to be layered together to create a more dynamic and interesting soundtrack. 
-												While working with the composers I was able to create a system that would allow them to create a base track, and then add layers on top of it.
-											</p>
-											<p>
-												Each track is played with 0 volume at start, and using an intensity point system the game can determine how much to raise the volume for each layer.
-												
-											</p>
-											</div>
-											<footer>
-
-											</footer>
-										</section>
-									</div>
-
-									<div class="row gtr-250">
-										<div class="col-4 col-12">
-											<section class="box">
 												<div>
-													<video src="images\PortfolioVideos\gyroAimTemporary.mp4" width="750" controls>
+													<video src="images\PortfolioVideos\smoothMenu.mp4" width="750" controls>
 														Failed to load video: Your browser does not support the video tag.
 													<>
 												</div>
-												
+											<header>
+												<h3>Smooth Menus</h3>
+											</header>
+											<p>
+												Utilizing Fusion I was able to create a pretty simple menu system that can be easily modified and animated. 
+												With everything decoupled and state itself being largely modified from outside the menu, it is very easy to add new menus and animations.
+											</p>
+											<p>
+												This was made for my game: The Bucket, which isn't released yet.
+											</p>
+											</div>
+											<footer>
 	
-												<header>
-													<h3>Gyroscopic Aim Assist</h3>
-												</header>
-												<p>
-													While aiming, you can fine adjust your aim by angling the mobile device you're playing on. This allows for more precise aiming, and is especially useful when aiming at a moving target.
-												</p>
-												<p>
-													I couldn't get a good video of this as I do not have another camera to record my phone, but I can assure you it works. You can try it yourself by playing the game.
-												</p>
+											</footer>
+										</section>
+
+										<section class="box">
+											<div>
+												<div>
+													<video src="images\PortfolioVideos\ballistaMomentum.mp4" width="750" controls>
+														Failed to load video: Your browser does not support the video tag.
+													<>
 												</div>
-												<footer>
+											<header>
+												<h3>Swordplay & Polish</h3>
+											</header>
+											<p>
+												While swinging a sword, the camera will follow the swords motion to simulate momentum, and will also shake when the player hits an enemy.
+												This is used to give the player a sense of impact, and to make the player feel like they are swinging a heavy weapon. 
+												Each weapon has a different impact force, and the camera shake and movement is scaled to the impact force.
+											</p>
+											<p> Given the sword uses nodes across the blade to detect impact, one can simply check the direction moved between frames to determine how to sway the camera.</p>
+											</div>
+											<footer>
 	
-												</footer>
-											</section>
-										</div>
-								<h2>Miscellaneous stuff: </h2>
-								<h3>More technical stuff I did on the side.</h3>
-								<div class="row gtr-250">
-									<div class="col-4 col-12">
+											</footer>
+										</section>
 										<section class="box">
 											<div>
 												<video src="images\PortfolioVideos\flowfieldOpen.mp4" width="750" controls>
@@ -175,36 +139,6 @@
 										</section>
 										<section class="box">
 											<div>
-												<video src="images\PortfolioVideos\sunlightBouncer.mp4" width="750" controls>
-													Failed to load video: Your browser does not support the video tag.
-												<>
-											</div>
-											
-											
-											<header>
-												<h3>Sunlight Bouncer</h3>
-											</header>
-											<p>
-												This system creates the illusion of Global Illumination by performing raycast bounces off of materials and inheriting the color of the material it hit.
-												For each bounce it blends the colour of each surface it hit as well as saturating and darkening the colour to create a more realistic effect. At each bounce site it also
-												creates a pointlight object with the current info of the light.
-											</p>
-
-											<p>
-												This is a very performance heavy system and will not be usable outside of baked lighting. It requires a decent amount of work to get it to work with your scene, but it is
-												but takes very little actual setup.
-											</p>
-											<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler2') .style.display=='none') {document.getElementById('spoiler2') .style.display=''}else{document.getElementById('spoiler2') .style.display='none'}">Code Sample</button>
-											<div id="spoiler2" style="display:none">
-												<script src="https://gist.github.com/MetaProxi/eb68d96a2cca8e6ed7d63ace6a41b641.js"></script>
-											</div>
-											
-											<footer>
-												
-											</footer>
-										</section>
-										<section class="box">
-											<div>
 												<video src="images\PortfolioVideos\weakestPoint.mp4" width="750" controls>
 													Failed to load video: Your browser does not support the video tag.
 												<>
@@ -219,27 +153,6 @@
 												The AI will find the thinnest part of an obstruction and target it to break through easier. 
 											</p>
 											<footer>
-											</footer>
-										</section>
-
-										<section class="box">
-											<div>
-												<video src="images\PortfolioVideos\bTreesMod.mp4" width="750" controls>
-													Failed to load video: Your browser does not support the video tag.
-												<>
-											</div>
-											
-											
-											<header>
-												<h3>BTrees External Tasks</h3>
-											</header>
-											<p>
-												This is a modification to tyridge66's BTrees module to allow for external tasks to be used. If you use Rojo to sync your project to Roblox Studio, you'll get benefits
-												from connecting Rojo synced modules to the Behavior Tree system. This also allows for a much more modular approach to creating AI.
-											</p>
-											<a href="https://devforum.roblox.com/t/btreesv5-rojo-support-fixes/1781449" class="button alt">Get the Module/Plugin!</a>
-											<footer>
-												
 											</footer>
 										</section>
 									</div>
